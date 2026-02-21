@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; 
+  color: #e0e0e0; 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #ffe81f; 
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; 
+}
+
+.character-card {
+  background-color: #1e1e1e; 
+  border: 1px solid #333;
+  border-radius: 8px; 
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(255, 232, 31, 0.15); 
+  border-color: #555;
+}
+
+.character-name {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.character-detail {
+  font-size: 1rem;
+  color: #b0b0b0; 
+  margin: 8px 0;
+}
+
+.character-detail strong {
+  color: #e0e0e0; 
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  margin-top: 40px; 
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #1e1e1e;
+  color: #ffe81f; 
+  border: 2px solid #ffe81f;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: #ffe81f; 
+  color: #121212; 
+  box-shadow: 0 0 15px rgba(255, 232, 31, 0.4); 
+  transform: translateY(-2px);
+}
+
+.no-more-text {
+  color: #b0b0b0;
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.loader-text {
+  margin-left: 15px;
+  color: #ffe81f;
+  font-weight: 600;
+}
+
+.error-message {
+  background-color: rgba(255, 69, 58, 0.1);
+  border: 1px solid #ff453a;
+  color: #ff453a;
+  padding: 16px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+}
