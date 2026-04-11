@@ -19,6 +19,15 @@ Para probar este proyecto en tu ordenador, sigue estos pasos en tu terminal:
 3- Ver la aplicación:
   Abre tu navegador web y visita http://localhost:3000
 
+Para desarrollar esta práctica, he dividido el trabajo en varias fases:
+
+Estructura de Componentes: Como indicaba en las instrucciones, realizar componentes pequeños (CharacterList, CharacterCard, Loader, ErrorMsg). Esto ayuda a mantener el código mucho más ordenado y fácil de entender.
+
+Llamada a la API: Utilicé el hook useEffect para hacer la petición fetch a la SWAPI nada más cargar la página.
+
+Gestión del Estado: Usé useState para guardar la lista de personajes, pero también me di cuenta de que necesitaba más estados para controlar la experiencia del usuario (saber si estaba cargando o si había ocurrido un error).
+
+Estilos: Decidí prescindir de librerías externas complejas y aplicar CSS puro (globals.css) para darle un estilo oscuro y centrado inspirado en la estética de Star Wars, usando CSS Grid para organizar las tarjetas de los personajes.
 
 Problemas encontrados y sus soluciones
 Durante el desarrollo, me fui encontrando con varios obstáculos típicos al empezar con React, los cuales pude ir resolviendo:
