@@ -1,0 +1,273 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 70px);
+}
+
+.pageContainer h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: -0.5px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links a {
+  font-weight: 500;
+  transition: color 0.2s;
+  color: #0f172a;
+}
+
+.links a:hover {
+  color: #2563eb;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background: #2563eb;
+  color: white;
+  border-radius: 20px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.searchContainer {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.cardInfo {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardInfo h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category {
+  color: #64748b;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2563eb;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.detailBtn, .selectBtn {
+  flex: 1;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.detailBtn {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.detailBtn:hover {
+  background: #e2e8f0;
+}
+
+.selectBtn {
+  background: #2563eb;
+  color: white;
+}
+
+.selectBtn:hover {
+  background: #1d4ed8;
+}
+
+.selectBtn.selected {
+  background: #ef4444;
+}
+
+.selectBtn.selected:hover {
+  background: #dc2626;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 768px) {
+  .detailContainer {
+    flex-direction: row;
+  }
+}
+
+.gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+}
+
+.detailInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detailInfo h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.brand {
+  display: inline-block;
+  background: #f8fafc;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #64748b;
+  width: fit-content;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #0f172a;
+  margin-top: 1rem;
+}
+
+.stock {
+  font-weight: 600;
+  color: #16a34a; 
+}
+
+.mainBtn {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: background 0.2s;
+}
+
+.mainBtn:hover {
+  background: #1d4ed8;
+}
+
+.mainBtn.active {
+  background: #ef4444;
+}
